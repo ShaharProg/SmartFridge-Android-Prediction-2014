@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="title_activity_login">התחבר</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">דוא"ל</string>
+    <string name="prompt_password">סיסמה</string>
+    <string name="action_sign_in_short">התחבר</string>
+    <string name="action_forgot_password">שחזור סיסמה אבודה</string>
+    <string name="login_progress_signing_in">מתחבר&#8230;</string>
+    <string name="error_invalid_email">כתובת דוא"ל אינה חוקית</string>
+    <string name="error_invalid_password">סיסמה קצרה מידי</string>
+    <string name="error_incorrect_password">סיסמה לא נכונה</string>
+    <string name="error_field_required">שדה חובה</string>
+
+</resources>

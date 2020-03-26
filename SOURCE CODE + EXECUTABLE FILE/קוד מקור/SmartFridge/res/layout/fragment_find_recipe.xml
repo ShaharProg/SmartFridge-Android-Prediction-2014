@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dcf4fa" >
+
+    <Button 
+        android:id="@+id/FindRecipe_searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="חפש" />
+    
+    <EditText 
+        android:id="@+id/FindRecipe_textToSearchET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/FindRecipe_searchBtn" />
+    
+    <ListView 
+        android:id="@+id/FindRecipe_recipesList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/FindRecipe_searchBtn"></ListView>
+    
+</RelativeLayout>

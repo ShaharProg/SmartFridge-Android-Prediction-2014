@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Smart Fridge": {
+            "applicationId": "kquXnokAChuwQaYndtnqtv2nL8qTraEIsfnlQhuy", 
+            "masterKey": "TA2b3BTlBPzN6kL0050phKAN1vhUg815v4aTn58s"
+        }, 
+        "_default": {
+            "link": "Smart Fridge"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.16"
+    }
+}

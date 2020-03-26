@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2px"
+    android:background="#00729F"
+    android:orientation="vertical"
+    android:padding="2px" >
+
+    <RelativeLayout
+        android:id="@+id/tabBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/BtnSlide"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/my_menu_btn" />
+
+        
+        <ImageView
+            android:id="@+id/TabBg_Fridge"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@id/BtnSlide"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/tab_bg" />
+        
+        <ImageView
+            android:id="@+id/TabBg_Shop"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_alignBottom="@id/BtnSlide"
+            android:layout_toLeftOf="@id/TabBg_Fridge"
+            android:src="@drawable/tab_bg" />
+        
+        <ImageView
+            android:id="@+id/TabFridge"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@id/BtnSlide"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/ic_launcher" />
+        
+        <ImageView
+            android:id="@+id/TabShop"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_alignBottom="@id/BtnSlide"
+            android:layout_toLeftOf="@id/TabFridge"
+            android:src="@drawable/shoppingcart_icon" />
+        
+        
+        
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="שם פעילות"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/nicknameBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#dcf4fa" >
+
+        <TextView
+            android:id="@+id/nicknameTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:text="שלום "
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/InnerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.example.smartfridge.CurrentContentsFragment" >
+    </FrameLayout>
+
+</LinearLayout>

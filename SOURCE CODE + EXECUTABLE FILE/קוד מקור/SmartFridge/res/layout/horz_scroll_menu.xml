@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="1dp"
+    android:layout_height="1dp"
+    android:background="#3a3b3d"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00729F"
+        android:gravity="center_horizontal"
+        android:text="תפריט"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3a3b3d"
+        android:cacheColorHint="#3a3b3d"
+        android:divider="#dcf4fa"
+        android:dividerHeight="2dp"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

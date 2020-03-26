@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartFridge</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_current_state_of_contents">CurrentStateOfContentsActivity</string>
+    <string name="title_activity_my_fragment">MyFragmentActivity</string>
+    <string name="title_activity_settings_fragment">SettingsFragment</string>
+    <string name="title_activity_feedback_fragment">FeedbackFragment</string>
+    <string name="title_activity_create_content_fragment">CreateContentFragment</string>
+    <string name="title_activity_add_to_list_fragment">AddToListFragment</string>
+    <string name="title_activity_shop_list_fragment">ShopListFragment</string>
+    <string name="unit_prompt">Select a unit of measurement</string>
+    <string name="category_prompt">Select a Category</string>
+    <string name="day_prompt">Select a Day</string>
+    <string name="category">Category</string>
+    <string name="search">Search</string>
+    <string name="name_or_company">Name or Company</string>
+    <string name="scan_barcode">Scan barcode</string>
+    <string name="format_field">FORMAT: </string>
+    <string name="content_field">CONTENT: </string>
+    <string name="end_buy_btn">End buy</string>
+
+    <string-array name="unit_arrays">
+        <item>Liter</item>
+        <item>Gram</item>
+        <item>Ml</item>
+        <item>Kg</item>
+    </string-array>
+
+    
+    <string-array name="day_arrays">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    
+    <string name="pull_to_refresh_pull_label">Pull to refresh&#8230;</string>
+    <string name="pull_to_refresh_release_label">Release to refresh&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">Loading&#8230;</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh&#8230;</string>
+
+</resources>

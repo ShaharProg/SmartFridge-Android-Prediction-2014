@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#dcf4fa" >
+
+    <ImageView
+        android:id="@+id/contentIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/product_icon" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/contentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/contentIcon"
+        android:text="שם מוצר"
+        android:textColor="#000000"
+        android:textSize="20dp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/contentCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentName"
+        android:layout_toLeftOf="@id/contentIcon"
+        android:text="חברה"
+        android:textColor="#000000"
+        android:textSize="15dp" >
+    </TextView>
+
+    
+        <CheckBox
+        android:id="@+id/contentCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+    
+    <ImageButton
+        android:id="@+id/contentBtnPlus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/contentCB"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/plus_btn"
+        android:scaleType="centerCrop"/>
+    
+    <ImageButton
+        android:id="@+id/contentBtnMinus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/contentCB"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/minus_btn"
+        android:scaleType="centerCrop"/>
+    
+
+    <TextView
+        android:id="@+id/contentQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/contentBtnPlus"
+        android:layout_alignTop="@id/contentName"
+        android:layout_marginRight="10dp"
+        android:text="3x"
+        android:textColor="#000000"
+        android:textSize="20dp" >
+    </TextView>
+    
+
+        <TextView
+        android:id="@+id/contentExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/contentQuantity"
+		android:layout_alignBottom="@id/contentName"
+        android:text="תקף עד: 15/7/14"
+        android:textColor="#000000"
+        android:textSize="10dp" >
+    </TextView>
+    <TextView
+        android:id="@+id/contentCapacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/contentExp"
+        android:layout_below="@id/contentExp"
+        android:text="תכולה"
+        android:textColor="#000000"
+        android:textSize="10dp" >
+    </TextView>
+    
+    <EditText 
+        android:id="@+id/contentRecipeCapacity"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+        android:visibility="gone"
+         />
+    
+    <TextView 
+        android:id="@+id/contentRecipeCapacityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/contentRecipeCapacity"
+        android:layout_above="@id/contentRecipeCapacity"
+        android:text="כמות:" 
+        android:visibility="gone"/>
+    
+
+</RelativeLayout>

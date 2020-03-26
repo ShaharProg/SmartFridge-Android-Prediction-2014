@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcf4fa"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreateContentFragment" >
+
+    
+    
+    <EditText
+        android:id="@+id/textBoxCreateContent_company"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="חברה"
+        android:inputType="text"
+        android:paddingBottom="4dip" />
+    
+    
+    <Spinner
+        android:id="@+id/spinnerCreateContent_category"
+        android:layout_below="@id/textBoxCreateContent_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:prompt="@string/category_prompt" />
+    
+    <EditText
+        android:id="@+id/textBoxCreateContent_name"
+        android:layout_below="@id/textBoxCreateContent_company"
+        android:layout_toRightOf="@id/spinnerCreateContent_category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="שם המוצר"
+        android:inputType="text"
+        android:paddingBottom="4dip" />
+    
+    
+    
+    
+    <Spinner
+        android:id="@+id/spinnerCreateContent_unit"
+        android:layout_below="@id/textBoxCreateContent_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/unit_arrays"
+        android:prompt="@string/unit_prompt" />
+    
+    <EditText
+        android:id="@+id/textBoxCreateContent_volume"
+        android:layout_below="@id/textBoxCreateContent_name"
+        android:layout_toRightOf="@id/spinnerCreateContent_unit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="כמות"
+        android:inputType="numberDecimal"
+        android:paddingBottom="4dip" />
+    
+    
+    <Button
+        android:id="@+id/scan_buttonCreateContent"
+        android:layout_below="@id/textBoxCreateContent_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="סרוק ברקוד" />
+
+
+    <TextView
+        android:id="@+id/scan_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBoxCreateContent_volume"
+        android:layout_centerHorizontal="true"
+        android:text="FORMAT:"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/scan_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scan_format"
+        android:layout_centerHorizontal="true"
+        android:text="CONTENT:"
+        android:textIsSelectable="true" />
+    
+    <ImageView 
+        android:id="@+id/productImg_CreateContent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/product_icon"
+        android:layout_below="@id/scan_buttonCreateContent"
+        />
+    
+    <Button
+        android:id="@+id/submit_buttonCreateContent"
+        android:layout_below="@id/productImg_CreateContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="הוסף מוצר חדש למערכת" />
+
+</RelativeLayout>

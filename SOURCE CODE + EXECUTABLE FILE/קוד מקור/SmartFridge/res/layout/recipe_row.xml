@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#dcf4fa" >
+
+    
+    <ImageView
+        android:id="@+id/recipeRowImg"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_launcher" >
+    </ImageView>
+        
+    <TextView
+        android:id="@+id/recipeRowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/recipeRowImg"
+        android:text="שם המתכון"
+        android:textColor="#000000"
+        android:textSize="20dp" >
+    </TextView>
+    
+    
+    <TextView
+        android:id="@+id/recipeRowAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeRowName"
+        android:layout_toLeftOf="@id/recipeRowImg"
+        android:text="מחבר"
+        android:textColor="#000000"
+        android:textSize="15dp" >
+    </TextView>
+    
+    
+    <TextView
+        android:id="@+id/recipeRowVotedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@id/recipeRowName"
+        android:layout_marginLeft="10dp"
+        android:text="2"
+        android:textColor="#000000"
+        android:textSize="10dp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/recipeRowVoted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/recipeRowVotedValue"
+        android:layout_alignBottom="@id/recipeRowName"
+        android:text="על ידי: "
+        android:textColor="#000000"
+        android:textSize="10dp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/recipeRowRatingValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/recipeRowVoted"
+        android:layout_alignTop="@id/recipeRowName"
+        android:layout_marginLeft="10dp"
+        android:text="4.7"
+        android:textColor="#000000"
+        android:textSize="20dp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/recipeRowRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/recipeRowRatingValue"
+        android:layout_alignTop="@id/recipeRowName"
+        android:text="דירוג: "
+        android:textColor="#000000"
+        android:textSize="20dp" >
+    </TextView>
+    
+    
+    <TextView
+        android:id="@+id/recipeRowViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeRowRating"
+        android:layout_alignRight="@id/recipeRowRating"
+        android:text="צפיות: "
+        android:textColor="#000000"
+        android:textSize="15dp" >
+    </TextView>
+    
+    
+    <TextView
+        android:id="@+id/recipeRowViewsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeRowRating"
+		android:layout_toLeftOf="@id/recipeRowViews"
+        android:text="87"
+        android:textColor="#000000"
+        android:textSize="15dp" >
+    </TextView>
+
+</RelativeLayout>

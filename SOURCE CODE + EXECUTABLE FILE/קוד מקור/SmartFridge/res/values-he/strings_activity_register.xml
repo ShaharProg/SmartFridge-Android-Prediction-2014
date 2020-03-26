@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="title_activity_register">התחבר</string>
+
+    <!-- Strings related to register -->
+    <string name="action_sign_up_register"><b>הרשם</b></string>
+    <string name="action_sign_up_short">הרשם</string>
+    <string name="register_progress_signing_up">נרשם&#8230;</string>
+
+</resources>

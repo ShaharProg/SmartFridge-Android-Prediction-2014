@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcf4fa" >
+
+    
+    <ImageView
+        android:id="@+id/recipeImg"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_launcher" >
+    </ImageView>
+        
+    <TextView
+        android:id="@+id/recipeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/recipeImg"
+        android:text="שם המתכון"
+        android:textColor="#000000"
+        android:textSize="20dp" >
+    </TextView>
+    
+    
+    <TextView
+        android:id="@+id/recipeAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeName"
+        android:layout_toLeftOf="@id/recipeImg"
+        android:text="מחבר"
+        android:textColor="#000000"
+        android:textSize="15dp" >
+    </TextView>
+    
+    
+    <TextView
+        android:id="@+id/recipeVotedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@id/recipeName"
+        android:layout_marginLeft="10dp"
+        android:text="2"
+        android:textColor="#000000"
+        android:textSize="10dp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/recipeVoted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/recipeVotedValue"
+        android:layout_alignBottom="@id/recipeName"
+        android:text="על ידי: "
+        android:textColor="#000000"
+        android:textSize="10dp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/recipeRatingValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/recipeVoted"
+        android:layout_alignTop="@id/recipeName"
+        android:layout_marginLeft="10dp"
+        android:text="4.7"
+        android:textColor="#000000"
+        android:textSize="20dp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/recipeRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/recipeRatingValue"
+        android:layout_alignTop="@id/recipeName"
+        android:text="דירוג: "
+        android:textColor="#000000"
+        android:textSize="20dp" >
+    </TextView>
+    
+    
+    <TextView
+        android:id="@+id/recipeViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeRating"
+        android:layout_alignRight="@id/recipeRating"
+        android:text="צפיות: "
+        android:textColor="#000000"
+        android:textSize="15dp" >
+    </TextView>
+    
+    
+    <TextView
+        android:id="@+id/recipeViewsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeRating"
+		android:layout_toLeftOf="@id/recipeViews"
+        android:text="87"
+        android:textColor="#000000"
+        android:textSize="15dp" >
+    </TextView>
+    
+    <RelativeLayout
+        android:id="@+id/recipeTab"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/recipeAuthor"
+        android:background="#000000" >
+        
+        <ImageView
+            android:id="@+id/recipeTabBgContent"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/tab_bg" />
+        
+        <ImageView
+            android:id="@+id/recipeTabBgPreparation"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/recipeTabBgContent"
+            android:src="@drawable/tab_bg" />
+        
+        <ImageView
+            android:id="@+id/recipeTabContent"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/shoppingcart_icon"/>
+        
+        <ImageView
+            android:id="@+id/recipeTabPreparation"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/recipeTabContent"
+            android:src="@drawable/note_icon" />
+        
+        <RatingBar
+            android:id="@+id/recipeTabRatingBar"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="0.5" />
+        
+    </RelativeLayout>
+    
+    
+     <ListView
+        android:id="@+id/recipeContentsList"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/recipeTab"
+        android:layout_marginTop="5dp"
+        android:background="#dcf4fa"
+        android:cacheColorHint="#dcf4fa"
+        android:scrollbars="vertical" >
+    </ListView>
+    
+     <TextView 
+         android:id="@+id/recipePreparation"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/recipeTab"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:visibility="invisible" />
+
+</RelativeLayout>

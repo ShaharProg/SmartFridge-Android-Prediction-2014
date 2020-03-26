@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dcf4fa" >
+
+    <EditText
+        android:id="@+id/feedback_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="הזן תוכן פנימה"
+        android:imeOptions="actionSend"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/send_feedback_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback_field"
+        android:text="שלח משוב" />
+
+</RelativeLayout>

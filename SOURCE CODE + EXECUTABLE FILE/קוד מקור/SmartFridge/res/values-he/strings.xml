@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">מקרר חכם</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="hello_world">שלום עולם</string>
+    <string name="title_activity_current_state_of_contents">CurrentStateOfContentsActivity</string>
+    <string name="title_activity_my_fragment">MyFragmentActivity</string>
+    <string name="title_activity_settings_fragment">SettingsFragment</string>
+    <string name="title_activity_feedback_fragment">FeedbackFragment</string>
+    <string name="title_activity_create_content_fragment">CreateContentFragment</string>
+    <string name="title_activity_add_to_list_fragment">AddToListFragment</string>
+    <string name="title_activity_shop_list_fragment">ShopListFragment</string>
+    <string name="unit_prompt">בחר יחידת מידה</string>
+    <string name="category_prompt">בחר קטגוריה</string>
+    <string name="day_prompt">בחר יום</string>
+    <string name="category">קטגוריה</string>
+    <string name="search">חפש</string>
+    <string name="name_or_company">שם המוצר או החברה</string>
+    <string name="scan_barcode">סרוק ברקוד</string>
+    <string name="format_field">פורמט: </string>
+    <string name="content_field">תוכן: </string>
+    <string name="end_buy_btn">סיום קניה</string>
+
+    <string-array name="unit_arrays">
+        <item>ליטר</item>
+        <item>גרם</item>
+        <item>מ"ל</item>
+        <item>ק"ג</item>
+    </string-array>
+
+    
+    <string-array name="day_arrays">
+        <item>ראשון</item>
+        <item>שני</item>
+        <item>שלישי</item>
+        <item>רביעי</item>
+        <item>חמישי</item>
+        <item>שישי</item>
+        <item>שבת</item>
+    </string-array>
+    
+    
+    <string name="pull_to_refresh_pull_label">משוך כדי לרענן&#8230;</string>
+    <string name="pull_to_refresh_release_label">שחרר כדי לרענן&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">טוען&#8230;</string>
+    <string name="pull_to_refresh_tap_label">לחץ כדי לרענן&#8230;</string>
+
+</resources>

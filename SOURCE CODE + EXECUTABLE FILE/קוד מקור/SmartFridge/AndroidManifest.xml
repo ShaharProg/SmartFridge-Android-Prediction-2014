@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartfridge"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--
+  IMPORTANT: Change "com.parse.tutorials.pushnotifications.permission.C2D_MESSAGE" in the lines below
+  to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission
+        android:name="com.example.smartfridge.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.smartfridge.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.smartfridge.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.InFridgeFragment"
+            android:label="@string/title_activity_my_fragment"
+            android:parentActivityName="android.support.v4.app.FragmentActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v4.app.FragmentActivity" />
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.SettingsFragment"
+            android:label="@string/title_activity_settings_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.FeedbackFragment"
+            android:label="@string/title_activity_feedback_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.CreateContentFragment"
+            android:label="@string/title_activity_create_content_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.AddToListFragment"
+            android:label="@string/title_activity_add_to_list_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.ShopListFragment"
+            android:label="@string/title_activity_shop_list_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.NeurophTestActivity"
+            android:label="@string/title_activity_neuroph_test" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.StatisticsFragment"
+            android:label="@string/title_activity_statistics_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.CreateRecipeFragment"
+            android:label="@string/title_activity_create_recipe_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.FindRecipeFragment"
+            android:label="@string/title_activity_find_recipe_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.RecipeFragment"
+            android:label="@string/title_activity_recipe_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.RecipeMainFragment"
+            android:label="@string/title_activity_recipe_main_fragment" >
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "com.parse.tutorials.pushnotifications" to match your app's package name. -->
+                <category android:name="com.example.smartfridge" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.smartfridge.FindRecipeByProductFragment"
+            android:label="@string/title_activity_find_recipe_by_product_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.smartfridge.AboutFragment"
+            android:label="@string/title_activity_about_fragment" >
+        </activity>
+    </application>
+
+</manifest>
